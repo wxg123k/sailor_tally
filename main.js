@@ -1,14 +1,18 @@
 import App from './App'
+Vue.config.productionTip = false
 // 引入uView
 import uView from "uview-ui";
 Vue.use(uView);
+// 引入Vuex
+import store from "./store/index.js"
 
 // #ifndef VUE3
 import Vue from 'vue'
 Vue.config.productionTip = false
 App.mpType = 'app'
 const app = new Vue({
-    ...App
+    ...App,
+	store
 })
 app.$mount()
 // #endif

@@ -1,0 +1,1 @@
+<view><view class="u-page">tally</view><u-tabbar vue-id="2121ba66-1" show="{{false}}" list="{{list}}" height="{{115}}" mid-button-size="{{100}}" icon-size="{{60}}" mid-button="{{true}}" bind:__l="__l"></u-tabbar></view>

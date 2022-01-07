@@ -1,24 +1,141 @@
-
-.content {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.index {
+  font-family: "STFangsong";
 }
-.logo {
-	height: 200rpx;
-	width: 200rpx;
-	margin-top: 200rpx;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 50rpx;
+.index .title {
+  background: linear-gradient(to bottom, #F9DB61 0%, #F9DB61 75%, white 100%);
+  height: 430rpx;
+  padding: 60rpx 30rpx 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 99;
 }
-.text-area {
-	display: flex;
-	justify-content: center;
+.index .title ._h1 {
+  font-size: 50rpx;
+  text-align: center;
+  line-height: 3em;
+  letter-spacing: 0.07em;
 }
-.title {
-	font-size: 36rpx;
-	color: #8f8f94;
+.index .title .paymentInfo ._h3 {
+  font-size: 30rpx;
+  font-weight: 300;
+}
+.index .title .paymentInfo .income,
+.index .title .paymentInfo .expenditure {
+  padding: 0 70rpx;
+}
+.index .title .paymentInfo .income ._span,
+.index .title .paymentInfo .expenditure ._span {
+  font-size: 40rpx;
+  line-height: 2em;
+}
+.index .title .paymentInfo .selectYear {
+  margin: 5rpx 0;
+  border-right: .5rpx solid #555555;
+}
+.index .title .paymentInfo .selectYear ._span {
+  font-size: 38rpx;
+  display: inline-block;
+  margin-right: 8rpx;
+}
+.index .title .paymentInfo .selectYear ._span ._i {
+  display: inline-block;
+  font-size: 50rpx;
+}
+.index .title ._ul {
+  margin-top: 20rpx;
+  padding: 20rpx 0;
+  background-color: white;
+  border-radius: 20rpx;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+.index .title ._ul ._li {
+  width: 25%;
+  text-align: center;
+}
+.index .title ._ul ._li image {
+  width: 60rpx;
+  height: 60rpx;
+  margin: auto;
+}
+.index .main {
+  margin-top: 490rpx;
+}
+.index .main ._li .top {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #E0E0E0;
+  padding: 20rpx 30rpx;
+}
+.index .main ._li .top ._p {
+  font-weight: 400;
+  color: #666666;
+}
+.index .main ._li .list ._li {
+  display: flex;
+  justify-content: space-between;
+  padding: 20rpx 30rpx;
+}
+.index .main ._li .list ._li .img {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  background-color: #F6F6F6;
+  position: relative;
+}
+.index .main ._li .list ._li .img image {
+  width: 50rpx;
+  height: 50rpx;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.index .main ._li .list ._li .img ._span {
+  line-height: 80rpx;
+  font-size: 35rpx;
+  padding-left: 30rpx;
+}
+.index .main ._li .list ._li .right {
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: .2rpx solid #e8e8e8;
+}
+.index .main ._li .list ._li .right ._span {
+  line-height: 80rpx;
+  font-size: 35rpx;
+}
+.index .main ._li .list ._li:last-of-type .right {
+  border: none;
 }
 

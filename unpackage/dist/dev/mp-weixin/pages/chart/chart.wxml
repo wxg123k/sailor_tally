@@ -1,0 +1,1 @@
+<view><view class="u-page">chart</view><u-tabbar vue-id="2a9a2cfc-1" list="{{list}}" height="{{115}}" mid-button-size="{{100}}" icon-size="{{60}}" mid-button="{{true}}" bind:__l="__l"></u-tabbar></view>
