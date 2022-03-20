@@ -1,7 +1,9 @@
 {
-  "navigationBarTitleText": "",
-  "enablePullDownRefresh": false,
+  "navigationStyle": "custom",
   "usingComponents": {
+    "u-dropdown": "/node-modules/uview-ui/components/u-dropdown/u-dropdown",
+    "u-dropdown-item": "/node-modules/uview-ui/components/u-dropdown-item/u-dropdown-item",
+    "u-tabs": "/node-modules/uview-ui/components/u-tabs/u-tabs",
     "u-tabbar": "/node-modules/uview-ui/components/u-tabbar/u-tabbar"
   }
 }
